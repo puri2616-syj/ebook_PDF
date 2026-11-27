@@ -1,0 +1,8 @@
+{
+  "name": "사진을 넣는 PDF문서 만들기 앱",
+  "description": "여러 장의 사진을 올려 한 쪽에 한 장씩 제목과 설명을 담아 넘겨보고, 고화질 PDF 앨범으로 저장하는 웹 스튜디오입니다.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

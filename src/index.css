@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif-editorial: "Noto Serif KR", Georgia, serif;
+    --font-sans-ui: "Plus Jakarta Sans", "Noto Sans KR", -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-handwriting-kr: "Nanum Pen Script", "Noto Sans KR", cursive;
+    --font-mono-tabular: "JetBrains Mono", monospace;
+  }
+
+  html {
+    font-family: var(--font-sans-ui);
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+.font-editorial {
+  font-family: var(--font-serif-editorial);
+}
+
+.font-gothic {
+  font-family: var(--font-sans-ui);
+}
+
+.font-myeongjo {
+  font-family: var(--font-serif-editorial);
+}
+
+.font-handwriting {
+  font-family: var(--font-handwriting-kr);
+}
+
+.font-ui {
+  font-family: var(--font-sans-ui);
+}
+
+.font-tabular {
+  font-family: var(--font-mono-tabular);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle custom scrollbar for filmstrip */
+.scrollbar-thin::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #D4D8E0;
+  border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: #AEB5C2;
+}
